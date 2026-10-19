@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form  Registrasi</title>
 
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 30px 15px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 470px;
+            margin: 20px auto;
+            background-color: #087f5b;
+            padding: 20px;
+        }
+
+        .form-box {
+            background-color: #c8e6d8;
+            width: 100%;
+            max-width: 325px;
+            margin: 0 auto;
+            padding: 25px 30px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #111111;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #cccccc;
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        .forgot {
+            display: block;
+            color: #628b76;
+            margin: 8px 0 20px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #429d65;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #328653;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #628b76;
+        }
+
+        .register-box {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- FORM REGISTRASI -->
+    <div class="container register-box" id="registrasi">
+        <div class="form-box">
+            <h2>Form Registrasi</h2>
+
+            <form onsubmit="return daftar(event)">
+                <input type="email" placeholder="Masukkan email" required>
+
+                <input type="password" placeholder="Masukkan password" required>
+
+                <input type="password" placeholder="Masukkan ulang password" required>
+
+                <button type="submit">Daftar</button>
+            </form>
+
+            <p>Sudah punya akun? <a href="#">Login</a></p>
+        </div>
+    </div>
+
+    <script>
+        function login(event) {
+            event.preventDefault();
+            alert("Form login berhasil diisi!");
+            return false;
+        }
+
+        function daftar(event) {
+            event.preventDefault();
+            alert("Form registrasi berhasil diisi!");
+            return false;
+        }
+    </script>
+
+</body>
+</html>

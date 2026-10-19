@@ -3,43 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jelajah Indonesia bersama MaiA</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Form Login</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 30px 15px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 470px;
+            margin: 20px auto;
+            background-color: #087f5b;
+            padding: 20px;
+        }
+
+        .form-box {
+            background-color: #c8e6d8;
+            width: 100%;
+            max-width: 325px;
+            margin: 0 auto;
+            padding: 25px 30px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #111111;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #cccccc;
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        .forgot {
+            display: block;
+            color: #628b76;
+            margin: 8px 0 20px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #429d65;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #328653;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #628b76;
+        }
+
+        .register-box {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <center>
-    <table widht="80%" cellpading="0" cellspacing="2">
-    <img class="hero"
-         src="c:\Users\PUTRI\Pictures\pandawa-1-Copy.jpg " width="1000" height="500"
-         alt="Pemandangan Indonesia">
 
-    <nav bgcolor="blue" align="center">
-        <td widht="33.3%">
-        <a href="index.html" style="background-color: aqua;">Beranda</a>
-    </td>
-        <td widht="33.3%">
-        <a href="menuwisata.html" style="background-color: aqua;">Menu Wisata</a>
-    </td>
-             <td widht="33.3%">
-        <a href="https://lovebali.baliprov.go.id/destination/detail/1663116376257/pantai-pandawa" style="background-color: rgb(8, 202, 228);">Website Pariwisata</a>
-        </td>
-         </table>
-    </nav>
+    <!-- FORM LOGIN -->
+    <div class="container">
+        <div class="form-box">
+            <h2>Form Login</h2>
 
-    <h1>Jelajahi Indonesia bersama MaiA</h1>
+            <form onsubmit="return login(event)">
+                <input type="email" placeholder="Masukkan email" required>
 
-    <p class="tebal">
-        Selamat datang di Indonesia, jelajahi dengan leluasa
-        dan nikmati perjalanan yang nyaman dan berkesan.
-    </p>
+                <input type="password" placeholder="Masukkan password" required>
 
-    <footer>
-        contact Person : Jelajah Wisata -
-        <a href="https://wa.me/6281515728533">
-            +62 815-1572-8533
-        </a>
-    </footer>
-   </center>
-</body>
-</html>
+                <a href="#" class="forgot">Lupa Password?</a>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <p>Belum punya akun? <a href="#registrasi">Daftar</a></p>
+        </div>
+    </div>
+
+    
